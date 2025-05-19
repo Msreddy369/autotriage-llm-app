@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+dspy
+langgraph
+langchain
+langchain-openai
+pydantic
+
+# Testing & dev dependencies
+pytest
+httpx
+
+# Command to Install
+pip install -r requirements.txt
