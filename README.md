@@ -56,30 +56,16 @@ AIAUTOPILOT_FASTAPI/
 pip install -r requirements.txt
 ```
 
-### 2. Configure DSPy with OpenAI API Key
-
-Open the file `config/dspy_setup.py` and replace `"your-openai-api-key"` with your actual key:
-
-```python
-import dspy
-from dspy import OpenAI
-
-# Set up DSPy LLM configuration
-dspy.settings.configure(
-    lm=OpenAI(
-        model="gpt-3.5-turbo",
-        api_key="your-openai-api-key"
-    )
-)
-```
-
-### 3. Run FastAPI Server
+### 2. Execute the main file with the Given below command so that in terminal you have to submit your OPENAI_API_KEY
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload # COMMAND TO RUN THE Project
+
+export OPENAI_API_KEY="PALCE YOUR OPENAI_KEY_HERE"; uvicorn main:app --reload # RUN THE WHOLE COMMAND IN A SINGLE LINE
 ```
 
-### 4. Access Swagger UI
+
+### 3. Access Swagger UI
 
 ```
 http://localhost:8000/docs
